@@ -142,9 +142,10 @@
 				
 				<!-- START #block-contact -->
 				<section id="block-contact">
-					<form method="post" action="php/email.php" id="contact-form" class="validate-form">
+					<form method="post" action="http://services.apps.gdlabs.it/crm/contact/save" id="contact-form" class="validate-form">
 						<fieldset>
 							<legend>Contact form</legend>
+							<input type="hidden" id="js_request" name="js_request" value="" />
 							<p><input type="text" id="name" name="name" title="your name is required" value="" placeholder="name *" required="required" /></p>
 							<p><input type="text" id="surname" name="surname" title="your surname is required" value="" placeholder="surname *" required="required" /></p>
 							<p><input type="email" id="email" name="email" title="your email is required" value="" placeholder="email *" required="required" /></p>
